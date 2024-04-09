@@ -1,0 +1,9 @@
+
+spring:
+    application:
+        name: estcontainer-poc1
+    ai:
+        ollama:
+            base-url: http://localhost:11434/
+            #model: llama2
+            model: mistral

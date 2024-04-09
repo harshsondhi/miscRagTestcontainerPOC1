@@ -1,0 +1,12 @@
+#sample from https://github.com/Adrianogba/Spring-Ollama/blob/main/docker-compose.yml
+version: '3.8'
+services:
+  ollama:
+    hostname: ollama
+    container_name: ollama
+    #for CPU or Nvidia gpus
+    image: ollama/ollama:0.1.30
+    #for AMD gpus
+    #    image: ollama/ollama:0.1.30-rocm
+    ports:
+      - "11434:11434"
